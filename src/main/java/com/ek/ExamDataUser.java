@@ -78,33 +78,6 @@ public class ExamDataUser {
         int groupCounts[] = {0, 0, 0, 0, 0};
         double groupAvg[] = new double[5];
 
-        // for(ExamData student : arr){
-        //     switch(student.group){
-        //         case GroupA:
-        //         groupAvg[0] += student.mathScore;
-        //         groupCounts[0]++;
-        //         break;
-        //     case GroupB:
-        //     groupAvg[1] += student.mathScore;
-        //     groupCounts[1]++;
-        //         break;
-        //     case GroupC:
-        //     groupAvg[2] += student.mathScore;
-        //     groupCounts[2]++;
-        //         break;
-        //     case GroupD:
-        //     groupAvg[3] += student.mathScore;
-        //     groupCounts[3]++;
-        //         break;                    
-        //     case GroupE:
-        //     groupAvg[4] += student.mathScore;
-        //     groupCounts[4]++;
-        //         break;
-        //     default:
-        //         break;
-        //     }
-        // }
-
         for(ExamData student : arr){
             groupAvg[student.group.ordinal()] += student.mathScore;
             groupCounts[student.group.ordinal()]++;
@@ -112,6 +85,7 @@ public class ExamDataUser {
 
         for(int i = 0; i < groupAvg.length; i++){
             groupAvg[i] /= groupCounts[i];
+            // This sets the value for each bar
             examdataRaces.setValue(groupAvg[i], "Ethnic Groups", Races.values()[i]);
         }
         // dataset.addSeries(series);
