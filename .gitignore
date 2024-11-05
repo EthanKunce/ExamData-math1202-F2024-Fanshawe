@@ -19,3 +19,7 @@ target/test-classes/com/ek/AppTest.class
 
 target/classes/com/ek/ExamData.class
 target/classes/com/ek/ExamDataUser.class
+target/classes/com/ek/ExamData.class
+target/classes/com/ek/ExamData$ParentalEducation.class
+target/classes/com/ek/ExamData$Races.class
+target/classes/com/ek/ExamDataUser.class
