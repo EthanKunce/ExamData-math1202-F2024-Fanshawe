@@ -1,6 +1,7 @@
 .gitignore
 .mvn/jvm.config
 .mvn/maven.config
+target/*
 target/ExamAnalysis-1.0-SNAPSHOT.jar
 target/classes/com/ek/ExamData.class
 target/classes/com/ek/ExamData$ParentalEducation.class
@@ -14,3 +15,7 @@ target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputF
 target/surefire-reports/com.ek.AppTest.txt
 target/surefire-reports/TEST-com.ek.AppTest.xml
 target/test-classes/com/ek/AppTest.class
+
+
+target/classes/com/ek/ExamData.class
+target/classes/com/ek/ExamDataUser.class
